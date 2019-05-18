@@ -24,3 +24,99 @@ From /home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/tensorflow
 Instructions for updating:
 Use tf.cast instead.
 Rasa Core server is up and running on http://localhost:5004
+Failed to run custom action 'action_joke'. Couldn't connect to the server at 'http://localhost:5055/webhook'. Is the server running? Error: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f6e482c7278>: Failed to establish a new connection: [Errno 111] Connection refused',))
+Encountered an exception while running action 'action_joke'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Rasa process starting
+Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+Scheduler started
+From /home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/tensorflow/python/ops/resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/tensorflow/python/keras/backend.py:4010: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Rasa Core server is up and running on http://localhost:5005
+Failed to run custom action 'action_joke'. Couldn't connect to the server at 'http://localhost:5055/webhook'. Is the server running? Error: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f2284fd44a8>: Failed to establish a new connection: [Errno 111] Connection refused',))
+Encountered an exception while running action 'action_joke'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Exception on /webhooks/rest/webhook [POST]
+Traceback (most recent call last):
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/rasa_core/channels/channel.py", line 372, in receive
+    input_channel=self.name()))
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/rasa_core/agent.py", line 322, in handle_message
+    return processor.handle_message(message)
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/rasa_core/processor.py", line 73, in handle_message
+    tracker = self.log_message(message)
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/rasa_core/processor.py", line 119, in log_message
+    self._handle_message_with_tracker(message, tracker)
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/rasa_core/processor.py", line 260, in _handle_message_with_tracker
+    parse_data = self._parse_message(message)
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/rasa_core/processor.py", line 239, in _parse_message
+    if message.text.startswith(INTENT_MESSAGE_PREFIX):
+AttributeError: 'NoneType' object has no attribute 'startswith'
+Exception on /webhooks/rest/webhook [POST]
+Traceback (most recent call last):
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/rasa_core/channels/channel.py", line 361, in receive
+    sender_id = self._extract_sender(request)
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/rasa_core/channels/channel.py", line 329, in _extract_sender
+    return req.json.get("sender", None)
+AttributeError: 'NoneType' object has no attribute 'get'
+Exception on /webhooks/rest/webhook [POST]
+Traceback (most recent call last):
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/rasa_core/channels/channel.py", line 372, in receive
+    input_channel=self.name()))
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/rasa_core/agent.py", line 322, in handle_message
+    return processor.handle_message(message)
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/rasa_core/processor.py", line 73, in handle_message
+    tracker = self.log_message(message)
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/rasa_core/processor.py", line 119, in log_message
+    self._handle_message_with_tracker(message, tracker)
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/rasa_core/processor.py", line 260, in _handle_message_with_tracker
+    parse_data = self._parse_message(message)
+  File "/home/csk/anaconda/envs/rasa_chatbot/lib/python3.6/site-packages/rasa_core/processor.py", line 239, in _parse_message
+    if message.text.startswith(INTENT_MESSAGE_PREFIX):
+AttributeError: 'NoneType' object has no attribute 'startswith'

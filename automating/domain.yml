@@ -29,6 +29,6 @@ templates:
 
   utter_goodbye:
   - text: "Talk to you later!"
-  
+
   utter_thanks:
   - text: "My pleasure."
