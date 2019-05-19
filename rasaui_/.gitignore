@@ -1,0 +1,12 @@
+.DS_Store
+npm-debug.log
+node_modules
+rasa-app-data/
+
+Jenkinsfile
+
+# editors
+.idea
+*.swp
+*.iml
+
