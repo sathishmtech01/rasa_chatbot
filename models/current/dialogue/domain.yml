@@ -6,8 +6,8 @@ actions:
 - utter_greet
 - utter_goodbye
 - action_joke
-- utter_query_0
-- utter_query_1
+- utter_query0
+- utter_query1
 config:
   store_entities_as_slots: true
 entities:
@@ -26,9 +26,9 @@ intents:
     use_entities: true
 - name:
     use_entities: true
-- query_0:
+- query0:
     use_entities: true
-- query_1:
+- query1:
     use_entities: true
 slots:
   name:
@@ -42,9 +42,9 @@ templates:
   - text: Nice to you meet you {name}. How can I help?
   utter_name:
   - text: Hey there! Tell me your name.
-  utter_query_0:
+  utter_query0:
   - text: narendra modi
-  utter_query_1:
+  utter_query1:
   - text: Bangalore
   utter_thanks:
   - text: My pleasure.

@@ -34,7 +34,7 @@ cmdline:
 	python -m rasa_core.run -d models/current/dialogue -u models/current/nlu --endpoints endpoints.yml
 
 start-rasacore:
-	python -m rasa_core.run -d models/current/dialogue -u models/current/nlu --endpoints endpoints.yml --port 5004
+	python -m rasa_core.run -d models/current/dialogue -u models/chat_2/chat_2_20190519-144317  --endpoints endpoints.yml --port 5004
 
 start-rasanlu:
 	python -m rasa_nlu.server --path ./models --port 5003

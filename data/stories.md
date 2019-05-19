@@ -31,10 +31,10 @@
 * goodbye
  - utter_goodbye 
 
-## query1
-* query_0
- - utter_query_0 
+## query0
+* query0
+ - utter_query0 
  
 ## query1
-* query_1
- - utter_query_1 
+* query1
+ - utter_query1 

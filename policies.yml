@@ -4,6 +4,8 @@ policies:
     max_history: 3
   - name: FallbackPolicy
     fallback_action_name: 'action_default_fallback'
+    nlu_threshold: 0.4
+    core_threshold: 0.4
   - name: MemoizationPolicy
     max_history: 3
   - name: FormPolicy

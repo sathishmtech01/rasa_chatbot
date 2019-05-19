@@ -22,12 +22,15 @@
 ###
     (rasa_chatbot) csk@csk-ai-revolution:~/PycharmProjects/rasa_chatbot$ make train-nlu
     (rasa_chatbot) csk@csk-ai-revolution:~/PycharmProjects/rasa_chatbot$ make train-core
+    
     Terminal 1
     (rasa_chatbot) csk@csk-ai-revolution:~/PycharmProjects/rasa_chatbot$make action-server
+    
     Terminal 2
+    (rasa_chatbot) csk@csk-ai-revolution:~/PycharmProjects/rasa_chatbot$make start-rasanlu
     
-    (rasa_chatbot) csk@csk-ai-revolution:~/PycharmProjects/rasa_chatbot$make cmdline
-    
+    Terminal 3
+    (rasa_chatbot) csk@csk-ai-revolution:~/PycharmProjects/rasa_chatbot$make start-rasacore
 
 
 ### Rasa UI

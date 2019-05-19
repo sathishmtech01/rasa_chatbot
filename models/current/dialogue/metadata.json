@@ -5,10 +5,10 @@
         "name"
       ]
     },
-    "utter_query_0": {
+    "utter_query0": {
       "slots": []
     },
-    "utter_query_1": {
+    "utter_query1": {
       "slots": []
     },
     "action_joke": {
@@ -41,7 +41,7 @@
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.form_policy.FormPolicy"
   ],
-  "trained_at": "20190519-135941",
+  "trained_at": "20190519-151938",
   "rasa_core": "0.14.4",
   "tensorflow": "1.13.1",
   "sklearn": "0.20.3"
