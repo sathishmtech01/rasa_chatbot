@@ -28,4 +28,4 @@ print(json.dumps(data))
 print(domain)
 
 json.dump(data,open("training_data_1.json", "w"))
-yaml.dump(domain, open("domain_1.yaml", "w"))
+yaml.dump(domain, open("domain_1.yml", "w"))

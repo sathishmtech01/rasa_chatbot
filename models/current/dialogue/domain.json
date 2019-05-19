@@ -5,6 +5,8 @@
     "intent_greet",
     "intent_joke",
     "intent_name",
+    "intent_query_0",
+    "intent_query_1",
     "intent_thanks",
     "entity_name",
     "slot_name_0",
@@ -20,6 +22,8 @@
     "prev_utter_thanks",
     "prev_utter_greet",
     "prev_utter_goodbye",
-    "prev_action_joke"
+    "prev_action_joke",
+    "prev_utter_query_0",
+    "prev_utter_query_1"
   ]
 }

@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/csk/PycharmProjects/rasa_chatbot/./models/chat_2/chat_2_20190519-142925/component_5_EmbeddingIntentClassifier.ckpt"
+all_model_checkpoint_paths: "/home/csk/PycharmProjects/rasa_chatbot/./models/chat_2/chat_2_20190519-142925/component_5_EmbeddingIntentClassifier.ckpt"
