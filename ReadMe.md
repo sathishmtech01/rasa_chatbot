@@ -120,6 +120,7 @@
     > RasaUI@2.5.1 start /home/csk/PycharmProjects/rasa_chatbot/rasaui
     > node server/server.js
     
+    
     2019-05-18 14:25:17.261|rasa-ui|info|Rasa UI Server: http://localhost:5001;
     2019-05-18 14:25:17.264|rasa-ui|info|;
     2019-05-18 14:25:17.316|rasa-ui|info|;
